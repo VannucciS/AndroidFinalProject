@@ -36,14 +36,14 @@ public class MovieDataSource extends PageKeyedDataSource<Integer, Movie> {
                     @Override
                     public void onResponse(@NonNull Call<MovieApiResponse> call, @NonNull Response<MovieApiResponse> response) {
                         Log.d(TAG , "Succeeded movies");
-                        if (response.body().getMovies() == null) {
+
+                        if (response.body() == null || response.body().getMovies() == null) {
+                            // Handle the case where the response body or movies list is null
                             return;
                         }
 
-                        if (response.body() != null) {
-                            // Fetch database and pass the result null for the previous page
-                            callback.onResult(response.body().getMovies(), null, FIRST_PAGE + 1);
-                        }
+                        // Fetch database and pass the result null for the previous page
+                        callback.onResult(response.body().getMovies(), null, FIRST_PAGE + 1);
                     }
 
                     @Override
@@ -51,9 +51,8 @@ public class MovieDataSource extends PageKeyedDataSource<Integer, Movie> {
                         Log.d(TAG , t.getMessage());
                     }
                 });
-
-
     }
+
 
     @Override
     public void loadBefore(@NonNull final LoadParams<Integer> params, @NonNull final LoadCallback<Integer, Movie> callback) {

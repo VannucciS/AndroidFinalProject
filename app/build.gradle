@@ -21,7 +21,7 @@ android {
             }
         }
 
-        buildConfigField "String", "API_KEY", localProperties['apiKey']
+        buildConfigField "String", "API_KEY", "\"fbd39cac336e79232d5e09b0a28b979d\""
     }
 
     buildTypes {
