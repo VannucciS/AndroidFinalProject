@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000"
+    android:background="#121111"
     tools:context="com.marwaeltayeb.movietrailer.ui.splash.SplashActivity">
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="49dp"
         android:text="@string/app_name"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/black"
         android:textSize="45sp"
         android:textStyle="bold|italic" />
 
