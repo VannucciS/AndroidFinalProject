@@ -75,8 +75,12 @@ public class SearchAdapter extends ListAdapter<Movie, SearchAdapter.SearchViewHo
             binding.movieTitle.setText(movie.getMovieTitle());
             binding.movieRating.setText(movie.getMovieVote());
 
+//            Glide.with(mContext)
+//                    .load(IMAGE_URL + movie.getMoviePoster())
+//                    .into(binding.moviePoster);
+
             Glide.with(mContext)
-                    .load(IMAGE_URL + movie.getMoviePoster())
+                    .load(IMAGE_URL )
                     .into(binding.moviePoster);
         }
     }

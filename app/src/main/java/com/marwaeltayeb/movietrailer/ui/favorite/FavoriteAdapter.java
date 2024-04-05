@@ -93,8 +93,12 @@ public class FavoriteAdapter extends ListAdapter<Movie, FavoriteAdapter.Favorite
                         .dontAnimate()
                         .dontTransform();
 
+//                Glide.with(mContext)
+//                        .load(IMAGE_URL + movie.getMoviePoster())
+//                        .apply(options)
+//                        .into(binding.moviePoster);
                 Glide.with(mContext)
-                        .load(IMAGE_URL + movie.getMoviePoster())
+                        .load(IMAGE_URL )
                         .apply(options)
                         .into(binding.moviePoster);
             }

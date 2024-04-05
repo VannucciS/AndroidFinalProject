@@ -84,8 +84,11 @@ public class MovieAdapter extends PagedListAdapter<Movie, MovieAdapter.MovieView
                 binding.movieTitle.setText(movie.getMovieTitle());
                 binding.movieRating.setText(movie.getMovieVote());
 
+//                Glide.with(mContext)
+//                        .load(IMAGE_URL + movie.getMoviePoster())
+//                        .into(binding.moviePoster);
                 Glide.with(mContext)
-                        .load(IMAGE_URL + movie.getMoviePoster())
+                        .load(IMAGE_URL)
                         .into(binding.moviePoster);
             } else {
                 Toast.makeText(mContext, "Movie is null", Toast.LENGTH_LONG).show();

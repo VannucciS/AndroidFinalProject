@@ -119,8 +119,11 @@ public class MovieActivity extends AppCompatActivity {
 
         binding.languageOfMovie.setText(language);
 
+//        Glide.with(this)
+//                .load(IMAGE_URL + backDrop)
+//                .into(binding.backdropImage);
         Glide.with(this)
-                .load(IMAGE_URL + backDrop)
+                .load(IMAGE_URL)
                 .into(binding.backdropImage);
 
         getGenres();

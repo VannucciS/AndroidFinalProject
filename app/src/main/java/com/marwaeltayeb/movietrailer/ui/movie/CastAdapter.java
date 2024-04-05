@@ -66,8 +66,12 @@ public class CastAdapter extends ListAdapter<Cast, CastAdapter.CastViewHolder> {
                 binding.actorName.setText(cast.getNameOfActor());
                 binding.actorCharacter.setText(cast.getCharacter());
 
+//                Glide.with(mContext)
+//                        .load(IMAGE_URL + cast.getProfileOfActor())
+//                        .placeholder(R.drawable.ic_profile)
+//                        .into(binding.actorProfile);
                 Glide.with(mContext)
-                        .load(IMAGE_URL + cast.getProfileOfActor())
+                        .load(IMAGE_URL)
                         .placeholder(R.drawable.ic_profile)
                         .into(binding.actorProfile);
             } else {
