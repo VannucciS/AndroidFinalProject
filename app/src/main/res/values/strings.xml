@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">Soccer Search</string>
-    <string name="movie_poster">Movie Poster</string>
-    <string name="movie_name">movie name</string>
+    <string name="movie_poster">Game Poster</string>
+    <string name="movie_name">game name</string>
     <string name="_8_4">8.4</string>
     <string name="settings">Settings</string>
     <string name="dots">dots</string>
     <string name="search">Search</string>
-    <string name="search_for_movies">Search for Movies</string>
+    <string name="search_for_movies">Search for Games</string>
     <string name="no_match">"No Match. Please try again"</string>
-    <string name="movie_details">Movie Details</string>
+    <string name="movie_details">Game Details</string>
     <string name="logo">Logo</string>
     <string name="date">%1$s |</string>
 
